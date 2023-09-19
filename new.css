@@ -267,6 +267,9 @@ margin-top: 10px;
 .fotoku{
     opacity: 30%;
 }
+.foto{
+    padding-right: 0.5px;
+}
 
 #kotakmenu{
     color: white;
