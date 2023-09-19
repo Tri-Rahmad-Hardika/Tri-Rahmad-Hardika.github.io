@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+margin-top: 10px;
+
+
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, #00d2ff, #3a7bd5, #7742B2, #CC0099, #FDB813);
+    background-size: 100% 100%;
+    animation: gradient 15s ease infinite;
+    z-index: -3;
+  }
+
+  
+
+  .fotoku{
+    z-index: ;
+    width: 350px;
+    height: 350px;
+    opacity: %; 
+  }
+
+  .foto{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+  }
+
+  .navbar-extra{
+    display:none ;
+  }
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 50px;
+    color: rgb(9, 204, 68);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition-duration: .2s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+
+.navbar a:hover{
+    color: rgb(192, 112, 194);
+    text-decoration: none;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10px 0;
+    
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.home-content h3 span {
+    color: aqua;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p{
+    font-size: 20px;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: aqua;
+    color: #081b29;
+    box-shadow: 0 0 20px aqua;
+}
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 25px aqua; 
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+ }
+
+ .header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+ }
+
+ .navbar-extra{
+    display: flex;
+  }
+
+ .navbar a{
+    display: flex;
+    font-size: 15px;
+    color: rgb(220, 38, 38);
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 35px;
+    margin-right: px;   
+}
+
+.navbar a:hover{
+    color: rgb(192, 112, 194);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    right: -200%;
+    background-blend-mode: color-burn;
+    width: 3rem;
+    height: 1px;
+    transition: 2.5s;
+    border: 0.8px solid;
+  }
+
+  .navbar.active {
+    right: 10px;
+    border: 0.8px solid;
+    border-radius: 50px;
+    height: 150px;
+    width: 140px;
+    transition: 0.8s;
+    background-blend-mode: color-burn;
+  }
+
+  .home .home-content h1{
+    font-size:  30px;
+  }
+
+  .home .home-content h3{
+    font-size:  18px;
+  }
+
+  .home .home-content p{
+    font-size:  15px;
+  }
+
+  .home .home-content span{
+    font-size:  18px;
+  }
+
+  .home {
+    
+    background-size: 260%;
+    background-position: right ;
+    background-position-x: 120ex;
+}
+
+.fotoku{
+    opacity: 30%;
+}
+
+#kotakmenu{
+    color: white;
+}
+
+p{
+    color: #fff;
+    text-align: start;
+}
+
+}
